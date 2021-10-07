@@ -1,0 +1,52 @@
+.w-0 {
+  width: 0;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.required::after {
+  content: "*";
+  color: #f14d84;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.form__section {
+  margin: 2rem -1.25rem 1rem -1.25rem;
+  padding: 20px 0 20px 0;
+  background: #f8f9fc;
+  text-align: center;
+}
+
+.form__section .form-text {
+  margin: 0;
+}
+
+.form__section-title {
+  color: #484a54;
+  border-radius: 1px;
+  font-weight: 600;
+}
+
+.text-black {
+  color: #000;
+}
+
+.admin-table td {
+  vertical-align: middle;
+}
+
+.w-24 {
+    width: 24px;
+}
+
+.h-24 {
+    height: 24px;
+}
+
+ul {
+    margin: 0;
+}

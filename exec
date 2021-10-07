@@ -1,0 +1,16 @@
+#!/bin/bash
+export APP_SERVICE=${APP_SERVICE:-"laravel.test"}
+
+if [ "$1" == "artisan" ] || [ "$1" == "art" ]; then
+    shift 1
+    command="php artisan $@"
+
+elif [ "$1" == "composer" ]; then
+    shift 1
+    command="composer $@"
+
+else
+    command="$@"
+fi
+
+docker-compose exec -u sail $APP_SERVICE $command

@@ -1,0 +1,57 @@
+.admin-top-bar {
+    @apply bg-black;
+}
+
+.admin-top-bar__inner {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-12 flex;
+}
+
+/*.admin-top-bar__logo {
+    @apply flex-shrink-0 flex items-center;
+
+    & img {
+        @apply block h-8 w-auto;
+    }
+}*/
+
+.admin-top-bar__menu {
+    @apply md:flex md:items-center;
+}
+
+.admin-top-bar a {
+    @apply text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 mr-2 rounded-md text-sm font-medium;
+
+    &:hover {
+        color: greenyellow;
+    }
+
+    &:last-of-type::after {
+        content: normal;
+    }
+
+    &::after {
+        color: #fff;
+        margin-left: 10px;
+    }
+}
+
+.admin-top-bar__badge {
+    border-radius: .25rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-right: .75rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    position: absolute;
+    right: .75rem;
+    top: 1rem;
+    color: #fff;
+}
+
+.badge--local {
+    background: red;
+}
+
+.badge--production {
+    background: #1cc88a;
+}
