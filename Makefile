@@ -3,12 +3,12 @@ exec := bash exec
 init: build perm up ci migrate
 
 build:
-	bash sail build
+	bash docker/sail build
 
 restart: down up
 
 up:
-	bash sail up -d
+	bash docker/sail up -d
 
 down:
 	docker-compose down --remove-orphans
