@@ -1,7 +1,9 @@
 exec := bash exec
 
+init: build perm up ci migrate
+
 build:
-	vendor/bin/sail build
+	docker-compose build
 
 restart: down up
 
