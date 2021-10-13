@@ -1,6 +1,6 @@
 exec := bash exec
 
-init: build perm up ci migrate
+init: build up ci ni wait-db migrate
 
 build:
 	bash docker/sail build
@@ -34,6 +34,9 @@ ci:
 cu:
 	$(exec) composer update
 
+ni:
+	$(exec) npm install
+
 watch:
 	$(exec) npm run watch
 
@@ -43,3 +46,6 @@ prod:
 perm:
 	sudo chgrp -R www-data storage bootstrap/cache
 	sudo chmod -R ug+rwx storage bootstrap/cache
+
+wait-db:
+	bash docker/wait-db
