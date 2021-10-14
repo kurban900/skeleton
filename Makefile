@@ -23,7 +23,7 @@ optimize:
 	$(exec) artisan optimize:clear
 
 test:
-	$(exec) artisan test
+	$(exec) artisan test --parallel
 
 seed:
 	$(exec) artisan db:seed
