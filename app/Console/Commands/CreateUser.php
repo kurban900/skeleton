@@ -7,10 +7,10 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
-class MakeUser extends Command
+class CreateUser extends Command
 {
 
-    protected $signature = 'make:user {login} {password} {role?}';
+    protected $signature = 'create:user {login} {password} {role?}';
 
     protected $description = 'Create new admin ex: login 123456 (admin|developer)';
 

@@ -1,6 +1,6 @@
 exec := bash exec
 
-init: build up ci ni wait-db migrate
+init: build up ci ni wait-db migrate seed
 
 build:
 	bash docker/sail build
