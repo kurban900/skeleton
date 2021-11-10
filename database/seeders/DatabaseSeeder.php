@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         if (!App::isProduction()) {
-            Artisan::call('create:user test 123456 developer');
+            Artisan::call('create:user developer 123456 developer');
         }
     }
 }

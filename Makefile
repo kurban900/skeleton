@@ -1,6 +1,6 @@
 exec := bash exec
 
-init: build up ci ni wait-db migrate seed
+init: build up ci ni wait-db migrate hello-message
 
 build:
 	bash docker/sail build
@@ -49,3 +49,6 @@ perm:
 
 wait-db:
 	bash docker/wait-db
+
+hello-message:
+	echo "\033[33mAdmin panel: http://127.0.0.1/admin \nLogin: developer \nPassword: 123456\033[0m"
