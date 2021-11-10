@@ -19,7 +19,5 @@
         "tailwindcss": "^2.1.2"
     },
     "dependencies": {
-        "daisyui": "^1.14.0",
-        "jquery-pjax": "^2.0.1"
     }
 }
