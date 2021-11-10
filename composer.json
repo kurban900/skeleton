@@ -10,6 +10,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "intervention/image": "^2.6",
         "kris/laravel-form-builder": "^1.40",
+        "kurban900/convert-nullable-input": "dev-master",
         "laravel-notification-channels/telegram": "^0.5.0",
         "laravel/framework": "^8.54",
         "laravel/sanctum": "^2.11",

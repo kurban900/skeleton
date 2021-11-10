@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e22ea1e29a2d91e148ebfd148c289b34",
+    "content-hash": "3dc264a7f757ddd74870d511dca87427",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1120,6 +1120,40 @@
                 "source": "https://github.com/kristijanhusak/laravel-form-builder/tree/1.40.0"
             },
             "time": "2020-09-28T20:54:27+00:00"
+        },
+        {
+            "name": "kurban900/convert-nullable-input",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kurban900/convert-nullable-input.git",
+                "reference": "ee7b06e658ce522c6fa2a9f328988e4d3cbbada4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kurban900/convert-nullable-input/zipball/ee7b06e658ce522c6fa2a9f328988e4d3cbbada4",
+                "reference": "ee7b06e658ce522c6fa2a9f328988e4d3cbbada4",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kurban900\\ConvertNullableInput\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kurban Magomedov",
+                    "email": "cuba.pro@ya.ru"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/kurban900/convert-nullable-input/issues",
+                "source": "https://github.com/kurban900/convert-nullable-input/tree/master"
+            },
+            "time": "2021-11-09T07:59:22+00:00"
         },
         {
             "name": "laravel-notification-channels/telegram",
@@ -8753,7 +8787,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "kurban900/convert-nullable-input": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
