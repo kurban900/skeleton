@@ -15,7 +15,7 @@ class AdminAuthController
 
     public function auth(Request $request)
     {
-        if (!Auth::attempt(['email' => $request['email'], 'password' => $request['password']],true)) {
+        if (!Auth::attempt(['email' => $request['email'], 'password' => $request['password']], true)) {
             return back()->withErrors('Не верный email или пароль')->withInput();
         }
 
