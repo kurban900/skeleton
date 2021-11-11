@@ -38,4 +38,16 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    public function render($request, Throwable $e)
+    {
+        if ($e instanceof BusinessException) {
+            return redirect()
+                ->back()
+                ->withInput()
+                ->withErrors(trans($e->getMessage()));
+        }
+
+        return parent::render($request, $e);
+    }
 }
