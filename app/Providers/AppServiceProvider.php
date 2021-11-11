@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -31,5 +33,7 @@ class AppServiceProvider extends ServiceProvider
         Paginator::useBootstrap();
 
         Model::preventLazyLoading(!app()->isProduction());
+
+        $this->app->instance(Filesystem::class, Storage::disk('public'));
     }
 }
