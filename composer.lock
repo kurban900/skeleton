@@ -1161,12 +1161,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kurban900/laravel-stub-generator.git",
-                "reference": "c0215a4d8963fa1d4eb59d576b6a9866fe015a73"
+                "reference": "9b950189e69c02554d3b8581f85d63873d42d7b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kurban900/laravel-stub-generator/zipball/c0215a4d8963fa1d4eb59d576b6a9866fe015a73",
-                "reference": "c0215a4d8963fa1d4eb59d576b6a9866fe015a73",
+                "url": "https://api.github.com/repos/kurban900/laravel-stub-generator/zipball/9b950189e69c02554d3b8581f85d63873d42d7b3",
+                "reference": "9b950189e69c02554d3b8581f85d63873d42d7b3",
                 "shasum": ""
             },
             "require": {
@@ -1197,7 +1197,7 @@
                 "issues": "https://github.com/kurban900/laravel-stub-generator/issues",
                 "source": "https://github.com/kurban900/laravel-stub-generator/tree/master"
             },
-            "time": "2021-11-13T13:38:33+00:00"
+            "time": "2021-11-13T20:01:20+00:00"
         },
         {
             "name": "laravel-notification-channels/telegram",
