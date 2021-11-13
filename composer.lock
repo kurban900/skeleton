@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3dc264a7f757ddd74870d511dca87427",
+    "content-hash": "a089af72d3f9775fa1e1a774308e355c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1154,6 +1154,50 @@
                 "source": "https://github.com/kurban900/convert-nullable-input/tree/master"
             },
             "time": "2021-11-09T07:59:22+00:00"
+        },
+        {
+            "name": "kurban900/laravel-stub-generator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kurban900/laravel-stub-generator.git",
+                "reference": "c0215a4d8963fa1d4eb59d576b6a9866fe015a73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kurban900/laravel-stub-generator/zipball/c0215a4d8963fa1d4eb59d576b6a9866fe015a73",
+                "reference": "c0215a4d8963fa1d4eb59d576b6a9866fe015a73",
+                "shasum": ""
+            },
+            "require": {
+                "kris/laravel-form-builder": "^1.40"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Kurban900\\LaravelStubGenerator\\LaravelStubGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kurban900\\LaravelStubGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kurban Magomedov",
+                    "email": "cuba.pro@ya.ru"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/kurban900/laravel-stub-generator/issues",
+                "source": "https://github.com/kurban900/laravel-stub-generator/tree/master"
+            },
+            "time": "2021-11-13T13:38:33+00:00"
         },
         {
             "name": "laravel-notification-channels/telegram",
@@ -8131,16 +8175,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "4.0.3",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65"
+                "reference": "65e8b7db476c5dd267e65eea9cab77584d3cfff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/d89cc98761b8cb5a1a235a6b703ae50d34080e65",
-                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/65e8b7db476c5dd267e65eea9cab77584d3cfff9",
+                "reference": "65e8b7db476c5dd267e65eea9cab77584d3cfff9",
                 "shasum": ""
             },
             "require": {
@@ -8189,14 +8233,14 @@
                 }
             ],
             "description": "Provides the functionality to export PHP variables for visualization",
-            "homepage": "http://www.github.com/sebastianbergmann/exporter",
+            "homepage": "https://www.github.com/sebastianbergmann/exporter",
             "keywords": [
                 "export",
                 "exporter"
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.3"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.4"
             },
             "funding": [
                 {
@@ -8204,7 +8248,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-28T05:24:23+00:00"
+            "time": "2021-11-11T14:18:36+00:00"
         },
         {
             "name": "sebastian/global-state",
@@ -8788,6 +8832,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "kurban900/laravel-stub-generator": 20,
         "kurban900/convert-nullable-input": 20
     },
     "prefer-stable": true,

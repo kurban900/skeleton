@@ -9,6 +9,7 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "intervention/image": "^2.6",
+        "kurban900/laravel-stub-generator": "dev-master",
         "kris/laravel-form-builder": "^1.40",
         "kurban900/convert-nullable-input": "dev-master",
         "laravel-notification-channels/telegram": "^0.5.0",
