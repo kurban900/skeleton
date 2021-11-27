@@ -1,6 +1,6 @@
 exec := bash exec
 
-init: build up ci ni wait-db migrate hello-message
+init: cp-env build up ci ni wait-db migrate seed hello-message
 
 build:
 	bash docker/sail build
@@ -51,4 +51,7 @@ wait-db:
 	bash docker/wait-db
 
 hello-message:
-	echo "\033[33mAdmin panel: http://127.0.0.1/admin \nLogin: developer \nPassword: 123456\033[0m"
+	echo "Admin panel: http://127.0.0.1/admin | Login: developer | Password: 123456"
+
+cp-env:
+	cp .env.example .env
